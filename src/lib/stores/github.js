@@ -7,7 +7,7 @@ function createGitHubStore() {
 	const { subscribe, set, update } = P
 
 	async function download() {
-		let res = await httpAPI("GET", "https://api.github.com/repos/OpenEVSE/ESP32_WiFi_V4.x/releases")
+		let res = await httpAPI("GET", "https://api.github.com/repos/lucio-ferrao/openevse_esp32_firmware/releases")
 		if (res) {
 			P.update(() => res)
 			return true
